@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elena Romelli — UX/UI Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html#top" class="logo">
+  elena romelli<span>.</span>
+  </a>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-content">
+    <!--<h1>
+      Elena <br>
+      <span class="gradient-text">Romelli</span>
+    </h1>-->
+    <h2 class="hero-content">Guided by curiosity and research, I turn human stories into intuitive digital experiences<span class="purple-dot">.</span></h2>
+
+    <!--<p>
+      I craft digital experiences that feel intuitive, look striking,
+      and tell stories people remember.
+    </p>-->
+
+    <div class="hero-buttons">
+      <a href="#work" class="btn-primary">View Work ↓</a>
+      <a href="#contact" class="btn-link">Get in touch →</a>
+    
+    </div>
+  </div>
+</section>
+
+</body>
+
+<!-- WORK SECTION -->
+
+<section id="work" class="work-section">
+  <div class="container">
+    <div class="small-label">Selected Work</div>
+    <h2>Projects I’m proud of.</h2>
+
+    <div class="projects-grid">
+
+      <a href="waste-sorting.html" class="project-card">
+        <div class="project-image alt2"></div>
+        <h3>Waste Sorting</h3>
+        <p>Sustainability project helping students improve recycling habits.</p>
+      </a>
+
+      <a href="laila.html" class="project-card">
+        <div class="project-image alt1"> 
+        </div>
+        <h3>Laila</h3>
+        <p>Conversational AI designed to improve user onboarding experiences.</p>
+      </a>
+
+      <a href="medicaltech.html" class="project-card">
+        <div class="project-image"></div>
+        <h3>Medicaltech</h3>
+        <p>Telemedicine platform focused on simplifying remote healthcare access.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="about-section">
+  <div class="container">
+
+    <div class="small-label">About Me</div>
+    <h2>Design is how I make sense of the world.</h2>
+
+    <p class="about-text">
+      I'm Elena, a UX/UI designer based in Verona with a background in Human-Computer Interaction. 
+      I love crafting solutions based on user needs and challenges, aiming to enhance the overall experience and usability.
+
+    </p>
+
+    <p class="about-text">
+      When I’m not designing, you'll find me hiking a mountain, playing volleyball, 
+      sketching in coffee shops or experimenting with music and instruments.
+    </p>
+    <p>
+      <a href="life.html" class="btn-link-life">Sneak peek on my life →</a>
+    </p>
+    
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <h3>Clarity & Empathy</h3>
+        <p>I ask the right questions and listen first. Understanding people and context is where great design begins.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Creative Problem-Solving</h3>
+        <p>I solve problems with creativity, move quickly, and refine ideas until only what’s essential remains.</p>
+      </div>
+
+
+      <div class="feature-card">
+        <h3>Continuous Growth</h3>
+        <p>I keep learning, experimenting, and improving to create thoughtful, effective solutions.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+  <div class="container center">
+    <div class="small-label">Let’s Connect</div>
+    <h2>Have an idea? <span class="gradient-text">Let’s talk.</span></h2>
+    <p>I’m always open to new projects, collaborations, or a good conversation about design.</p>
+
+
+   <div class="contact-buttons">
+      <div>
+        <button class="btn-primary copy-email" data-email="elenaromelli00@gmail.com">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            Copy my email
+            <span class="copy-feedback">Email copied!</span>
+          </button>
+      </div>
+
+     
+      <a href="https://www.linkedin.com/in/elenaromelli/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="btn-primary">
+        LinkedIn
+      </a>
+      
+ </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Elena Romelli. Designed with intention.
+</footer>
+
+
+<!--JAVASCRIPTt-->
+<!--COPY EMAIL BUTTON 
+<script>
+  const copyBtn = document.querySelector('.copy-email');
+  const feedback = document.querySelector('.copy-feedback');
+
+  copyBtn.addEventListener('click', () => {
+    const email = copyBtn.textContent.trim();
+
+    navigator.clipboard.writeText(email).then(() => {
+      feedback.textContent = "Email copied!";
+      feedback.style.opacity = "1";
+
+      setTimeout(() => {
+        feedback.style.opacity = "0";
+      }, 1500);
+    });
+  });
+</script>-->
+<script>document.querySelector('.copy-email').addEventListener('click', function() {
+  const email = this.dataset.email;
+  navigator.clipboard.writeText(email).then(() => {
+    const feedback = this.querySelector('.copy-feedback');
+    feedback.style.opacity = '1';
+    setTimeout(() => feedback.style.opacity = '0', 2000);
+  });
+});</script>
+
+</html>
