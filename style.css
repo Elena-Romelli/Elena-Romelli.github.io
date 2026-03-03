@@ -812,7 +812,7 @@ footer {
 
 
 /*ABOUT IMAGES LIFE PAGE*/
-.about-images-life .image-grid-life {
+/*.about-images-life .image-grid-life {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -821,9 +821,9 @@ footer {
 }
 
 .image-grid-life img {
-  width: 100%;
+  width: 50%;
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 14px;
   display: block;
-}
+}*/
