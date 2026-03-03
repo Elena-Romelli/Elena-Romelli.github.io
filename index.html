@@ -14,14 +14,17 @@
   <a href="index.html#top" class="logo">
   elena romelli<span>.</span>
   </a>
-  <div class="nav-links">
+  <!--<div class="nav-links">
     <a href="#work">Work</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-  </div>
+  </div>-->
 </header>
 
+
+
 <section id="top" class="hero">
+  
   <div class="hero-content">
     <div class="small-label">UX/UI DESIGNER @ONIVERSE</div>
     <!--<h1>
@@ -55,20 +58,26 @@
     <div class="projects-grid">
 
       <a href="waste-sorting.html" class="project-card">
-        <div class="project-image alt2"></div>
+         <div class="project-image">
+          <img src="images/waste.jpg" alt="Wastesorting_mockup">
+        </div>
+      
         <h3>Waste Sorting</h3>
         <p>Sustainability project helping students improve recycling habits.</p>
       </a>
 
       <a href="laila.html" class="project-card">
-        <div class="project-image alt1"> 
+        <div class="project-image">
+          <img src="images/laila.jpg" alt="Laila_mockup">
         </div>
         <h3>Laila</h3>
         <p>Conversational AI designed to improve user onboarding experiences.</p>
       </a>
 
       <a href="medicaltech.html" class="project-card">
-        <div class="project-image"></div>
+         <div class="project-image">
+          <img src="images/med.jpg" alt="Medicaltech_mockup">
+        </div>
         <h3>Medicaltech</h3>
         <p>Telemedicine platform focused on simplifying remote healthcare access.</p>
       </a>
@@ -135,12 +144,18 @@
 
    <div class="contact-buttons">
       <div>
-        <button class="btn-primary copy-email" data-email="elenaromelli00@gmail.com">
+        <!--<button class="btn-primary copy-email" data-email="elenaromelli00@gmail.com">
            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
             </svg>
             Copy my email
             <span class="copy-feedback">Email copied!</span>
+          </button>-->
+          <button class="btn-primary copy-email" data-email="elenaromelli00@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+             <span class="btn-label">Copy my email</span>
           </button>
       </div>
 
@@ -181,13 +196,37 @@
     });
   });
 </script>-->
-<script>document.querySelector('.copy-email').addEventListener('click', function() {
+
+
+<!--<script>document.querySelector('.copy-email').addEventListener('click', function() {
   const email = this.dataset.email;
   navigator.clipboard.writeText(email).then(() => {
     const feedback = this.querySelector('.copy-feedback');
     feedback.style.opacity = '1';
     setTimeout(() => feedback.style.opacity = '0', 2000);
   });
-});</script>
+});</script>-->
+
+<script>
+const btn = document.querySelector('.copy-email');
+
+const originalContent = btn.innerHTML;
+const copiedContent = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"/>
+  </svg>
+  <span class="btn-label">Email copied!</span>
+`;
+
+btn.addEventListener('click', () => {
+  navigator.clipboard.writeText(btn.dataset.email);
+  btn.innerHTML = copiedContent;
+  
+  setTimeout(() => {
+    btn.innerHTML = originalContent;
+  }, 2000);
+});
+
+</script>
 
 </html>
