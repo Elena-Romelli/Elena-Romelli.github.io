@@ -4,228 +4,238 @@
   <meta charset="UTF-8">
   <title>Elena Romelli — UX/UI Designer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="--proj:var(--voice)">
 
+<a href="#top" class="skip-link">Skip to content</a>
+
+<!-- NAV -->
 <header class="nav">
-  <a href="index.html#top" class="logo">
-  elena romelli<span>.</span>
-  </a>
-  <!--<div class="nav-links">
+  <a href="index.html" class="logo">elena romelli<span>.</span></a>
+  <nav class="nav-links" id="nav-links">
     <a href="#work">Work</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-  </div>-->
+  </nav>
 </header>
 
-
-
+<!-- HERO -->
 <section id="top" class="hero">
-  
-  <div class="hero-content">
-    <div class="small-label">UX/UI DESIGNER @ONIVERSE</div>
-    <!--<h1>
-      Elena <br>
-      <span class="gradient-text">Romelli</span>
-    </h1>-->
-    <h2 class="hero-content">Guided by curiosity and research, I turn human stories into intuitive digital experiences<span class="purple-dot">.</span></h2>
+  <div class="hero-grid-line h" style="top:28%"></div>
+  <div class="hero-grid-line h" style="top:72%"></div>
+  <div class="hero-grid-line v" style="left:65%"></div>
 
-    <!--<p>
-      I craft digital experiences that feel intuitive, look striking,
-      and tell stories people remember.
-    </p>-->
-
+  <div class="hero-left">
+    <div class="hero-eyebrow">UX/UI Specialist · Oniverse · Verona</div>
+    <h2 class="hero-headline">
+      Guided by<br>
+      curiosity,<br>
+      shaped by <span class="marker marker-auto" style="--mk:var(--voice)"><em>people.</em></span>
+    </h2>
+    <p class="hero-tagline">
+      I turn human stories into intuitive digital experiences through research, empathy, and craft.
+    </p>
     <div class="hero-buttons">
-      <a href="#work" class="btn-primary">View Work ↓</a>
+      <a href="#work" class="btn-primary">View Work</a>
       <a href="#contact" class="btn-link">Get in touch →</a>
-    
     </div>
+  </div>
+
+  <!--<div class="hero-vertical">Verona · Open to opportunities · 2026</div>-->
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    Scroll
   </div>
 </section>
 
-</body>
-
-<!-- WORK SECTION -->
-
+<!-- WORK -->
 <section id="work" class="work-section">
-  <div class="container">
-    <div class="small-label">Selected Work</div>
-    <h2>Projects I’m proud of.</h2>
+  <div class="section-label">Selected Work</div>
 
-    <div class="projects-grid">
+  <div class="project-list">
 
-      <a href="waste-sorting.html" class="project-card">
-         <div class="project-image">
-          <img src="images/waste.jpg" alt="Wastesorting_mockup">
-        </div>
-      
-        <h3>Waste Sorting</h3>
-        <p>Sustainability project helping students improve recycling habits.</p>
+    <!-- Calzedonia — pezzo forte -->
+    <article class="project-row" style="--tint:var(--c-calz-tint); --txt:var(--c-calz-text)">
+      <span class="p-badge" style="--proj:var(--c-calz)">01</span>
+      <a href="calzedonia.html" class="p-thumb">
+        <img src="images/calzedonia_after_desktop.jpg" alt="Calzedonia redesign">
       </a>
+      <div class="p-main">
+        <span class="p-tag" style="--proj:var(--c-calz)">Web Design · UI · E-commerce · Live</span>
+        <h3><a href="calzedonia.html" class="marker" style="--mk:var(--c-calz)">Calzedonia.com Redesign</a></h3>
+        <p class="p-desc">UI Specialist on the official redesign of a global fashion e-commerce. Homepage live June 2026.</p>
+        <a href="calzedonia.html" class="link-arrow">View case study →</a>
+      </div>
+    </article>
 
-      <a href="laila.html" class="project-card">
-        <div class="project-image">
-          <img src="images/laila.jpg" alt="Laila_mockup">
-        </div>
-        <h3>Laila</h3>
-        <p>Conversational AI designed to improve user onboarding experiences.</p>
+    <!-- Medicaltech -->
+    <article class="project-row" style="--tint:var(--c-med-tint); --txt:var(--c-med-text)">
+      <span class="p-badge" style="--proj:var(--c-med)">03</span>
+      <a href="medicaltech.html" class="p-thumb">
+        <img src="images/med.jpg" alt="Medicaltech mockup">
       </a>
+      <div class="p-main">
+        <span class="p-tag" style="--proj:var(--c-med)">Mobile UX · UI Design</span>
+        <h3><a href="medicaltech.html" class="marker" style="--mk:var(--c-med)">Medicaltech</a></h3>
+        <p class="p-desc">Redesigning a telemedicine app for elderly patients — clarity, accessibility, trust.</p>
+        <a href="medicaltech.html" class="link-arrow">View case study →</a>
+      </div>
+    </article>
 
-      <a href="medicaltech.html" class="project-card">
-         <div class="project-image">
-          <img src="images/med.jpg" alt="Medicaltech_mockup">
-        </div>
-        <h3>Medicaltech</h3>
-        <p>Telemedicine platform focused on simplifying remote healthcare access.</p>
+    <!-- Packaging -->
+    <article class="project-row" style="--tint:var(--c-pack-tint); --txt:var(--c-pack-text)">
+      <span class="p-badge" style="--proj:var(--c-pack)">02</span>
+      <a href="packaging.html" class="p-thumb">
+        <img src="images/packaging_final.webp" alt="Hansaplast packaging">
       </a>
+      <div class="p-main">
+        <span class="p-tag" style="--proj:var(--c-pack)">Packaging Design · Visual · Brand</span>
+        <h3><a href="packaging.html" class="marker" style="--mk:var(--c-pack)">Hansaplast Kids Packaging</a></h3>
+        <p class="p-desc">Reimagining children's bandage packaging through play, structure, and shelf impact.</p>
+        <a href="packaging.html" class="link-arrow">View case study →</a>
+      </div>
+    </article>
 
-    </div>
   </div>
 </section>
 
-
-<!-- ABOUT SECTION -->
-
+<!-- ABOUT -->
 <section id="about" class="about-section">
-  <div class="container">
+  <div style="max-width:1100px; margin:0 auto;">
+    <div class="section-label" style="padding:0; margin-bottom:2.6rem;">About Me</div>
+    <div class="about-grid">
 
-    <div class="small-label">About Me</div>
-    <h2>Design is how I make sense of the world.</h2>
-
-    <p class="about-text">
-      I'm Elena, a UX/UI designer based in Verona with a background in Human-Computer Interaction. 
-      I love crafting solutions based on user needs and challenges, aiming to enhance the overall experience and usability.
-
-    </p>
-
-    <p class="about-text">
-      When I’m not designing, you'll find me hiking a mountain, playing volleyball, 
-      sketching in coffee shops or experimenting with music and instruments.
-    </p>
-    <p>
-      <a href="life.html" class="btn-link-life">Sneak peek on my life →</a>
-    </p>
-    
-
-    <div class="features-grid">
-
-      <div class="feature-card">
-        <h3>Clarity & Empathy</h3>
-        <p>I ask the right questions and listen first. Understanding people and context is where great design begins.</p>
+      <div class="portrait-wrap">
+        <div class="portrait-deco"></div>
+        <div class="portrait-frame">
+          <img src="images/life_elena.webp" alt="Elena Romelli">
+        </div>
+        <p class="portrait-caption">Elena Romelli · Verona, IT · 2026</p>
       </div>
 
-      <div class="feature-card">
-        <h3>Creative Problem-Solving</h3>
-        <p>I solve problems with creativity, move quickly, and refine ideas until only what’s essential remains.</p>
-      </div>
+      <div class="about-content">
+        <h2><span class="marker" style="--mk:var(--voice)"><em>Design</em></span> is how I<br><span class="marker" style="--mk:var(--voice)"><em>make sense</em></span><br>of the world.</h2>
+        <p class="about-body">
+          I'm Elena, a UX/UI designer based in Verona with a background in Human-Computer Interaction. I love crafting solutions grounded in user needs, enhancing experiences through research and empathy.
+        </p>
+        <p class="about-body">
+          When I'm not designing, you'll find me hiking a mountain, playing volleyball, sketching in coffee shops, or experimenting with music and instruments.
+        </p>
+        <p style="margin-top:1.2rem;">
+          <a href="life.html" class="btn-link-life">Sneak peek on my life →</a>
+        </p>
 
+        <div class="skills-row">
+          <span class="skill-pill">UX Research</span>
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Wireframing</span>
+          <span class="skill-pill">Prototyping</span>
+          <span class="skill-pill">Usability Testing</span>
+          <span class="skill-pill">Conversational UX</span>
+          <span class="skill-pill">Visual Design</span>
+          <span class="skill-pill">Design Systems</span>
+        </div>
 
-      <div class="feature-card">
-        <h3>Continuous Growth</h3>
-        <p>I keep learning, experimenting, and improving to create thoughtful, effective solutions.</p>
+        <div class="about-values">
+          <div class="value-card">
+            <h3>Clarity &amp; Empathy</h3>
+            <p>I ask questions and listen first. Understanding people and context is where great design begins.</p>
+          </div>
+          <div class="value-card">
+            <h3>Creative Problem-Solving</h3>
+            <p>I move quickly and refine ideas until only what's essential remains.</p>
+          </div>
+          <div class="value-card">
+            <h3>Continuous Growth</h3>
+            <p>I keep learning and experimenting to create thoughtful, effective solutions.</p>
+          </div>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
 
-
-<!-- CONTACT SECTION -->
-
+<!-- CONTACT -->
 <section id="contact" class="contact-section">
-  <div class="container center">
-    <div class="small-label">Let’s Connect</div>
-    <h2>Have an idea? <span class="gradient-text">Let’s talk.</span></h2>
-    <p>I’m always open to new projects, collaborations, or a good conversation about design.</p>
-
-
-   <div class="contact-buttons">
-      <div>
-        <!--<button class="btn-primary copy-email" data-email="elenaromelli00@gmail.com">
-           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-            </svg>
-            Copy my email
-            <span class="copy-feedback">Email copied!</span>
-          </button>-->
-          <button class="btn-primary copy-email" data-email="elenaromelli00@gmail.com">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-              </svg>
-             <span class="btn-label">Copy my email</span>
-          </button>
+  <div style="max-width:1100px; margin:0 auto;">
+    <div class="section-label" style="padding:0; margin-bottom:2.6rem;">Let's Connect</div>
+    <div class="contact-inner">
+      <h2>Have an idea?<br>Let's <span class="marker" style="--mk:var(--voice)"><em>talk.</em></span></h2>
+      <p class="contact-sub">I'm always open to new projects, collaborations, or a good conversation about design.</p>
+      <div class="contact-buttons">
+        <button class="btn-primary copy-email" data-email="elenaromelli00@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span class="btn-label">Copy my email</span>
+        </button>
+        <a href="https://www.linkedin.com/in/elena-romelli/" target="_blank" rel="noopener noreferrer" class="btn-primary">LinkedIn</a>
       </div>
-
-     
-      <a href="https://www.linkedin.com/in/elena-romelli/" 
-        rel="noopener noreferrer"
-        class="btn-primary">
-        LinkedIn
-      </a>
-      
- </div>
-
+    </div>
   </div>
 </section>
 
 <footer>
-  © 2026 Elena Romelli. Designed with intention.
+  <span class="footer-copy">© 2026 Elena Romelli. Designed with intention.</span>
+  <span class="footer-note">Built with <em>craft</em></span>
 </footer>
 
+<a href="#top" class="back-to-top" title="Back to top">↑</a>
 
-<!--JAVASCRIPTt-->
-<!--COPY EMAIL BUTTON 
 <script>
-  const copyBtn = document.querySelector('.copy-email');
-  const feedback = document.querySelector('.copy-feedback');
-
-  copyBtn.addEventListener('click', () => {
-    const email = copyBtn.textContent.trim();
-
-    navigator.clipboard.writeText(email).then(() => {
-      feedback.textContent = "Email copied!";
-      feedback.style.opacity = "1";
-
-      setTimeout(() => {
-        feedback.style.opacity = "0";
-      }, 1500);
+  /* copy email */
+  const btn = document.querySelector('.copy-email');
+  if (btn) {
+    const orig = btn.innerHTML;
+    const done = `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span class="btn-label">Email copied!</span>`;
+    btn.addEventListener('click', () => {
+      navigator.clipboard.writeText(btn.dataset.email);
+      btn.innerHTML = done;
+      setTimeout(() => { btn.innerHTML = orig; }, 2000);
     });
+  }
+
+  /* scroll reveal for cards/sections */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.project-row, .about-grid, .contact-inner, .value-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(18px)';
+    el.style.transition = 'opacity .65s ease, transform .65s ease';
+    obs.observe(el);
   });
-</script>-->
 
-
-<!--<script>document.querySelector('.copy-email').addEventListener('click', function() {
-  const email = this.dataset.email;
-  navigator.clipboard.writeText(email).then(() => {
-    const feedback = this.querySelector('.copy-feedback');
-    feedback.style.opacity = '1';
-    setTimeout(() => feedback.style.opacity = '0', 2000);
+  /* marker highlight reveal on scroll (not the auto-playing hero one) */
+  document.querySelectorAll('.marker:not(.marker-auto)').forEach(el => {
+    const io = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { el.classList.add('in-view'); io.disconnect(); }
+    }, { threshold: 0.4 });
+    io.observe(el);
   });
-});</script>-->
-
-<script>
-const btn = document.querySelector('.copy-email');
-
-const originalContent = btn.innerHTML;
-const copiedContent = `
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="20 6 9 17 4 12"/>
-  </svg>
-  <span class="btn-label">Email copied!</span>
-`;
-
-btn.addEventListener('click', () => {
-  navigator.clipboard.writeText(btn.dataset.email);
-  btn.innerHTML = copiedContent;
-  
-  setTimeout(() => {
-    btn.innerHTML = originalContent;
-  }, 2000);
-});
-
 </script>
 
+<script>
+  /* colored cursor dot */
+  const dot = document.createElement("div");
+  dot.id = "cursor-dot";
+  document.body.appendChild(dot);
+  window.addEventListener("mousemove", e => {
+    dot.style.left = e.clientX + "px";
+    dot.style.top = e.clientY + "px";
+  });
+  document.querySelectorAll("a, button, .project-row, .skill-pill, .value-card, .swatch").forEach(el => {
+    el.addEventListener("mouseenter", () => dot.classList.add("hover"));
+    el.addEventListener("mouseleave", () => dot.classList.remove("hover"));
+  });
+</script>
+</body>
 </html>
