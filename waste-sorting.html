@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="top" style="--proj:var(--c-waste)">
-<div id="cursor"></div>
 
 <header class="nav">
   <a href="index.html" class="logo">elena romelli<span>.</span></a>
@@ -148,14 +147,17 @@
 <a href="#top" class="back-to-top" title="Back to top">↑</a>
 
 <script>
-  const cur = document.getElementById('cursor');
-  document.addEventListener('mousemove', e => {
-    cur.style.left = e.clientX + 'px';
-    cur.style.top  = e.clientY + 'px';
+  /* colored cursor dot */
+  const dot = document.createElement("div");
+  dot.id = "cursor-dot";
+  document.body.appendChild(dot);
+  window.addEventListener("mousemove", e => {
+    dot.style.left = e.clientX + "px";
+    dot.style.top = e.clientY + "px";
   });
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('mouseenter', () => cur.classList.add('hover'));
-    el.addEventListener('mouseleave', () => cur.classList.remove('hover'));
+  document.querySelectorAll("a, button, .project-row, .skill-pill, .value-card, .swatch").forEach(el => {
+    el.addEventListener("mouseenter", () => dot.classList.add("hover"));
+    el.addEventListener("mouseleave", () => dot.classList.remove("hover"));
   });
 </script>
 </body>
